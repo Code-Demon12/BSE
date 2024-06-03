@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-button">
+        <h1><a href="home.html">Home</a></h1>
+    </div>    
+    <div class="main-container">
+        <div class="container">
+            <h2>Connect with Us</h2>
+            <form id="contact-form">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="grid-item full-width">
+                        <label for="email">Work Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="grid-item full-width">
+                        <label>
+                            <input type="checkbox" id="terms-checkbox">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <div class="grid-item full-width">
+                        <input type="submit" value="Contact Us" id="submit-button" disabled>
+                    </div>
+                </div>
+                <p id="success-message" style="display:none;">Details saved successfully!</p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
